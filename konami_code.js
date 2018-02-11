@@ -7,6 +7,7 @@ function init() {
   // Write your JavaScript code inside the init() function
 function handler(e){
   console.log(e.detail||e.which)
+  console.log(i)
   if(parseInt(e.detail || e.which) == code[i]){
     i++
   }
@@ -16,6 +17,6 @@ function handler(e){
     alert('Congratulations!');
   }
 
-
+console.log(i)
 }
 }

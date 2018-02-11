@@ -6,6 +6,7 @@ function init() {
   document.addEventListener('keydown', handler)
   // Write your JavaScript code inside the init() function
 function handler(e){
+  console.log(e.detail||e.which)
   if(parseInt(e.detail || e.which) == code[i]){
     i++
   }

@@ -6,15 +6,22 @@ function init() {
   document.addEventListener('keydown', handler)
   // Write your JavaScript code inside the init() function
 function handler(e){
+  let k = parseInt(e.detail || e.which)
   console.log(e.detail||e.which)
   console.log(i)
-  if(parseInt(e.detail || e.which) == code[i]){
+  if(k == code[i]){
     i++
   }
+  else if (k = code[0]) {
+i=1
+    
+  }
+
   else{i=0}
 
   if(i == code.length){
     alert('Congratulations!');
+    i=0;
   }
 
 console.log(i)

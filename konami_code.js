@@ -12,10 +12,7 @@ function handler(e){
   if(k == code[i]){
     i++
   }
-  else if (k = code[0]) {
-i=1
-    
-  }
+
 
   else{i=0}
 
